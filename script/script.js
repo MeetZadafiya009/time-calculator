@@ -1,5 +1,6 @@
 
-document.getElementById('show').addEventListener("click", () => {
+document.getElementById('show').addEventListener("submit", (e) => {
+    e.preventDefault();
     let date = document.getElementById("birthdate").value;
     let unit = document.getElementById("unit").value;
     let result = document.getElementById('result');
